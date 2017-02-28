@@ -36,7 +36,7 @@
 
           <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -53,7 +53,7 @@
           
            <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -68,7 +68,7 @@
 
            <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -84,7 +84,7 @@
 
            <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -99,7 +99,7 @@
 
            <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -114,7 +114,7 @@
 
            <div class="card large">
             <div class="card-image">
-              <img src="http://materializecss.com/images/sample-1.jpg">
+              <img src="images/product.jpg">
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -149,10 +149,30 @@
   </footer>
 
 
+
+  <script>
+    //If no service worker return
+    if("serviceWorker" in navigator){
+
+      //Registering service worker
+      navigator.serviceWorker.register("service-worker.js")
+      .then(function(){
+        console.log("service worker registered");
+      })
+      .catch(function(error){
+        console.log("service worker register failed: ", error);
+      });
+
+    }
+
+  </script>
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+
 
   </body>
 </html>
